@@ -1,0 +1,20 @@
+.a-class{
+    background-color: rgb(228, 124, 124);
+    font-family: "Verdana","DejaVu Sans", sans-serif;
+    /*Verdana should not be in " "*/
+}
+
+.a-plus-class{
+    font-size: 24px;
+}
+
+#one-id{
+    color:#0000ff;
+    font-size: 36px;
+}
+
+#another-id{
+    background-color: rgb(115, 255, 115);
+    font-size:24px; /*could use a-plus-class class for this rule. This avoids code duplication*/
+    font-weight: bold;
+}
