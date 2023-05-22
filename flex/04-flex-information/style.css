@@ -10,7 +10,48 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  /*no need for display and justify-content*/
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
+
+/*no need for .all*/
+.all{
+  display: flex;
+  flex-direction: column;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/*no need for .plant{ display, flex-wrap, justify-content*/
+.plant{
+  display: flex;
+  flex-wrap: wrap;  /*no need for flex-wrap*/
+  justify-content: center;
+  max-width: 200px; /*only this is needed*/
+}
+
+.text{
+  text-align: center;
+}
+
+/*
+From solution:
+
+body {
+  text-align: center;
+}
+
+This deals with the title and image-text alignment.
+Much less verbose than what I did.
+*/
+
 
 /* do not edit this footer */
 .footer {

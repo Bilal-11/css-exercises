@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  display: flex;
+  align-items: center;
+  padding: 8px;
 }
 
 .profile-image {
@@ -45,4 +49,30 @@ a {
 
 ul {
   list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
 }
+
+.left-side{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: auto;
+}
+
+.right-side{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/*
+For the middle gap, I took a different approach from the solution:
+
+- Solution approach: use justify-content:space-between; to get the gap
+
+- My approach: use margin-right:auto; on the left-side so that its margin gobbles up any extra space, hence producing the middle gap.
+*/
